@@ -1,0 +1,1 @@
+seneca: node index.js
