@@ -6,5 +6,8 @@ seneca.add("cmd:add", function(msg, respond){
 	respond(null, {answer: sum});
 });
 
-seneca.listen();
+seneca.listen({
+	type: 'http',
+	port: process.env.PORT
+});
 console.log("started");
